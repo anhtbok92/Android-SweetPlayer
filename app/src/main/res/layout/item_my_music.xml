@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/drawer_text_color"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/content_item_margin"
+        android:layout_marginStart="@dimen/content_item_margin"
+        android:layout_marginTop="@dimen/content_item_margin"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/content_song_name_color" />
+
+    <TextView
+        android:id="@+id/artist_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/song_name"
+        android:layout_alignLeft="@id/song_name"
+        android:layout_alignStart="@id/song_name"
+        android:layout_marginLeft="@dimen/content_item_margin"
+        android:layout_marginStart="@dimen/content_item_margin"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/content_artist_name_color" />
+    
+   <ImageButton
+   	   android:id="@+id/actions_image_button"
+   	   android:layout_width="wrap_content"
+   	   android:layout_height="wrap_content"
+       android:background="@null"
+       android:contentDescription="@string/my_music_button_desc"
+       android:layout_alignParentEnd="true"
+   	   android:layout_alignParentRight="true"
+       android:layout_centerVertical="true"
+   	   android:layout_margin="@dimen/my_music_item_margin"
+       android:icon="@mipmap/ic_action_overflow" />
+
+</RelativeLayout>

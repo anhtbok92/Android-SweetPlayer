@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="drawer_icons_array">
+        <item>@mipmap/ic_search</item>
+        <item>@mipmap/ic_album_white_48dp</item>
+        <item>@mipmap/ic_my_music</item>
+        <item>@mipmap/ic_legal</item>
+        <item>@mipmap/ic_exit</item>
+    </array>
+
+    <string-array name="drawer_titles_array">
+        <item>Search</item>
+        <item>Explore</item>
+        <item>My Downloads</item>
+        <item>Legal</item>
+        <item>Quit</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_main_background_color"
+    tools:context="com.ronnyml.sweetplayer.fragments.SearchFragment">
+
+    <ProgressBar
+        android:id="@+id/loading_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        style="?android:attr/progressBarStyleLarge" />
+
+    <LinearLayout
+        android:id="@+id/top_artists_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/detail_header"
+        android:orientation="vertical">
+
+        <com.ronnyml.sweetplayer.utils.RoundedNetworkImageView
+            android:id="@+id/playlist_image"
+            android:layout_width="@dimen/content_common_imageview_size"
+            android:layout_height="@dimen/content_common_imageview_size"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/content_item_margin"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top_songs_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_artists_layout"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.github.ksoichiro.android.observablescrollview.ObservableListView
+            android:id="@+id/songs_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</RelativeLayout>

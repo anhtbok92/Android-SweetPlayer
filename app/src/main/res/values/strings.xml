@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main -->
+    <string name="app_name">SweetPlayer</string>
+    <string name="action_search">Search </string>
+    <string name="is_first_time" translatable="false">is_first_time</string>
+    <string name="my_music_button_desc">Actions</string>
+    <string name="my_music_image_desc">Folder Image</string>
+    <string name="splash_screen_desc">SplahScreen</string>
+    <string name="title_activity_main">Explore</string>
+
+    <!-- Content -->
+    <string name="content_artists">Top Artists</string>
+    <string name="content_genres">Genres</string>
+    <string name="content_playlists">Top Playlists</string>
+    <string name="content_songs">Top Songs</string>
+
+    <!-- Dialog -->
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_delete">Delete</string>
+    <string name="dialog_exit">¿Are you sure to quit?</string>
+    <string name="dialog_ok">OK</string>
+
+    <!-- Download -->
+    <string name="download">Download</string>
+    <string name="download_complete">Download completed:</string>
+    <string name="download_downloading">Downloading:</string>
+    <string name="download_no_downloads">You haven\'t downloaded songs yet.</string>
+    <string name="download_failed">¡Download failed!</string>
+    <string name="download_no_external_storage">There is no external storage for your device.</string>
+
+    <!-- Drawer -->
+    <string name="drawer_image_desc">Menu item</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!-- Internet connection -->
+    <string name="internet_no_connection_message">You are not connected to the Internet.</string>
+    <string name="internet_no_connection_title">No Internet connection.</string>
+
+    <!-- Legal -->
+    <string name="legal_description">Using Android-SweetPlayer does not constitute permission or a license for obtaining or distributing unauthorized files. It is illegal for You to distribute copyrighted files without permission.\n\nWhen You download music you agree that you will not use the application for the purpose of copyright infringement.\n\nAny songs provided in the app\'s search results are in no way connected to, under the control of, or associated with Android-SweetPlayer.\n\nThe app is designed purely as an music search, discovery and information tool.\n\nThis is not a file sharing app, whether peer-to-peer or otherwise. Use Android-SweetPlayer carefully.\n\nEnjoy!!!</string>
+    <string name="legal_title">Legal</string>
+
+    <!-- Player -->
+    <string name="player_init_duration" translatable="false">00:00</string>
+    <string name="player_play_pause">Play/Pause</string>
+
+    <!-- Search -->
+    <string name="search">Search</string>
+    <string name="search_hint">Search artist or song</string>
+    <string name="search_no_results">No results found for your search.</string>
+    <string name="search_text_empty">You need to enter an artist name or song.</string>
+
+    <!-- Share -->
+    <string name="share">Share</string>
+    <string name="share_android_app">in the SweetPlayer app for Android:</string>
+    <string name="share_text" translatable="false">#NowPlaying</string>
+    <string name="share_title">¿How would you like to share?</string>
+</resources>

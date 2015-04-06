@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Content -->
+    <color name="content_artist_name_color">#7B7B7B</color>
+    <color name="content_main_background_color">#2A2A2A</color>
+    <color name="content_song_name_color">#434343</color>
+    <color name="content_title_transparent_color">#99000000</color>
+    <color name="content_title_divider_color">#000000</color>
+    <color name="content_view_divider_color">#9D9D9D</color>
+
+    <!-- Download -->
+    <color name="download_progress_color">#000000</color>
+    <color name="download_item_downloading_color">#D1EEFB</color>
+
+    <!-- Drawer -->
+    <color name="drawer_background_color">#1A1A1A</color>
+    <color name="drawer_item_divider_color">#272727</color>
+    <color name="drawer_item_selected_color">#303030</color>
+    <color name="drawer_text_color">#FFF</color>
+
+    <!-- Legal -->
+    <color name="legal_title_color">#33B6E3</color>
+    <color name="legal_description_color">#000</color>
+
+    <!-- My Music -->
+    <color name="my_music_background_color">#DEDEDE</color>
+    <color name="my_music_path_color">#393939</color>
+
+    <!-- Player -->
+    <color name="player_artist_color">#CCCCCC</color>
+    <color name="player_background_color">#585858</color>
+    <color name="player_song_color">#FFFFFF</color>
+
+    <!-- Search -->
+    <color name="search_edit_background_color">#353535</color>
+    <color name="search_edit_hint_color">#727071</color>
+    <color name="search_icon_background_color">#747474</color>
+    <color name="search_layout_color">#4A4A4A</color>
+
+    <!-- Seekbar -->
+    <color name="seekbar_background_color">#9D9D9D</color>
+    <color name="seekbar_progress_color">#33B6E3</color>
+</resources>

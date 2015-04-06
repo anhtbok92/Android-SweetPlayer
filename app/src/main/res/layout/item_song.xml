@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_song_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/drawer_text_color"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+     <com.android.volley.toolbox.NetworkImageView
+         android:id="@+id/artist_imageview"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentStart="true"
+         android:layout_margin="@dimen/content_artist_imageview_margin"
+         android:layout_width="@dimen/content_artist_imageview_size"
+         android:layout_height="@dimen/content_artist_imageview_size" />
+    
+    <TextView
+        android:id="@+id/song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_alignTop="@+id/artist_imageview"
+        android:layout_marginLeft="@dimen/content_item_margin"
+        android:layout_marginStart="@dimen/content_item_margin"
+        android:layout_marginTop="@dimen/content_item_margin"
+        android:layout_toEndOf="@+id/artist_imageview"
+        android:layout_toRightOf="@+id/artist_imageview"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/content_song_name_color" />
+ 
+    <TextView
+        android:id="@+id/artist_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/song_name"
+        android:layout_alignLeft="@id/song_name"
+        android:layout_alignStart="@id/song_name"
+        android:layout_marginLeft="@dimen/content_item_margin"
+        android:layout_marginStart="@dimen/content_item_margin"
+        android:layout_toEndOf="@id/artist_imageview"
+        android:layout_toRightOf="@id/artist_imageview"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/content_artist_name_color" />
+
+    <LinearLayout
+        android:id="@+id/progress_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/artist_imageview">
+
+        <SeekBar
+            android:id="@+id/progress_bar"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/seekbar_height"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/content_item_margin"
+            android:max="100"
+            android:progressDrawable="@drawable/seekbar"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/download_progress_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/content_item_margin"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/download_progress_color"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+    
+   <ImageButton
+   	   android:id="@+id/download_image_button"
+   	   android:layout_width="wrap_content"
+   	   android:layout_height="wrap_content"
+       android:background="@null"
+       android:contentDescription="@string/download"
+   	   android:layout_alignParentRight="true"
+       android:layout_alignParentEnd="true"
+       android:layout_centerVertical="true"
+   	   android:layout_margin="@dimen/download_imagebutton_margin"
+       android:src="@mipmap/ic_download" />
+
+</RelativeLayout>

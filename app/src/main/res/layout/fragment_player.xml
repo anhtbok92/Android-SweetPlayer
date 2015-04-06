@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/player_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/player_background_color"
+    android:layout_alignParentBottom="true"
+    android:visibility="visible"
+    tools:context="com.ronnyml.sweetplayer.fragments.PlayerFragment">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/player_artist_image_view"
+        android:layout_width="@dimen/content_artist_imageview_size"
+        android:layout_height="@dimen/content_artist_imageview_size"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/player_view_margin" />
+
+    <TextView
+        android:id="@+id/player_song_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/player_artist_image_view"
+        android:layout_toRightOf="@+id/player_artist_image_view"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/player_song_color"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/player_artist_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/player_song_textview"
+        android:layout_toEndOf="@+id/player_artist_image_view"
+        android:layout_toRightOf="@+id/player_artist_image_view"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/player_artist_color" />
+
+    <LinearLayout
+        android:id="@+id/time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/player_artist_textview"
+        android:layout_toEndOf="@+id/player_artist_image_view"
+        android:layout_toRightOf="@+id/player_artist_image_view"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/player_current_duration_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/player_view_margin"
+            android:text="@string/player_init_duration"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/player_artist_color" />
+
+        <SeekBar
+            android:id="@+id/player_seek_bar"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/seekbar_height"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/player_view_margin"
+            android:progressDrawable="@drawable/seekbar" />
+
+        <TextView
+            android:id="@+id/player_total_duration_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/player_view_margin"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/player_artist_color" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/player_play_pause_imagebutton"
+        android:layout_width="@dimen/player_imageview_size"
+        android:layout_height="@dimen/player_imageview_size"
+        android:background="@null"
+        android:contentDescription="@string/player_play_pause"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/player_view_margin"
+        android:scaleType="fitXY"
+        android:src="@drawable/play" />
+</RelativeLayout>

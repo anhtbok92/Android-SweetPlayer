@@ -1,0 +1,53 @@
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+out/
+
+# Local configuration file
+local.properties
+
+# Android Studio
+.idea/
+*.iml
+*.iws
+*.ipr
+*.swp
+*/build
+*/production
+*/local.properties
+*/out
+
+# Eclipse
+.classpath
+.project
+.settings
+proguard/
+
+# Gradle
+.gradle/
+build/
+gradlew
+gradlew.bat
+gradle/
+
+#Linux
+*~
+
+#KDE
+.directory
+
+# Mac OS X
+.DS_Store
+
+# Windows
+Thumbs.db
